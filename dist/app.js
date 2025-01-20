@@ -1178,7 +1178,7 @@
                     <img src="${cat.url}" alt="A cute cat" />
                     <div class="heard__div">
                         <button class="button__add ${existInFavorites ? 'button__active' : ''}">
-                            <img src="${existInFavorites ? '/static/heard-red.svg' : '/static/heard.svg'}" alt="Like" />
+                            <img src="${existInFavorites ? '../../../static/heard-red.svg' : '../../../static/heard.svg'}" alt="Like" />
                         </button>
                     </div>
                 </div>`
@@ -1191,10 +1191,10 @@
                     button.addEventListener('click', () => {
                         const heartImg = button.querySelector('img');
                         if (!button.classList.contains('button__active')) {
-                            heartImg.src = '/static/heard-red.svg'; 
+                            heartImg.src = '../../../static/heard-red.svg'; 
                             button.classList.add('button__active');
                         } else {
-                            heartImg.src = '/static/heard.svg'; 
+                            heartImg.src = '../../../static/heard.svg'; 
                             button.classList.remove('button__active');
                         }
                     });
